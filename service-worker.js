@@ -1,4 +1,4 @@
-const CACHE = "money-pots-v1";
+const CACHE = "money-pots-v2";
 const FILES = [
   "./",
   "./index.html",
