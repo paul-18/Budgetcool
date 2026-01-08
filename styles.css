@@ -1,0 +1,73 @@
+:root {
+  --primary: #4CAF50;
+  --bg: #f2f2f7;
+  --card: #ffffff;
+  --text: #111;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+  background: var(--card);
+  box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+
+.pot-bar {
+  display: flex;
+  gap: .5rem;
+  padding: .75rem;
+  overflow-x: auto;
+}
+
+.pot {
+  padding: .5rem 1rem;
+  border-radius: 999px;
+  background: #ddd;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.pot.active {
+  background: var(--primary);
+  color: white;
+}
+
+.add-pot {
+  background: #eee;
+  font-weight: bold;
+}
+
+.card {
+  background: var(--card);
+  margin: .75rem;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+
+input, select, button {
+  width: 100%;
+  margin-top: .5rem;
+  padding: .6rem;
+  font-size: 1rem;
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+li {
+  list-style: none;
+  padding: .5rem 0;
+  border-bottom: 1px solid #eee;
+}
