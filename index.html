@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shared Money Pot</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>🫙 Shared Money Pot</h1>
+
+<section class="card">
+  <h2>Add Money to Pot</h2>
+  <input type="number" id="addAmount" placeholder="Amount">
+  <select id="addBy">
+    <option>You</option>
+    <option>Partner</option>
+  </select>
+  <button onclick="addMoney()">Add to Pot</button>
+</section>
+
+<section class="card">
+  <h2>Add Expense</h2>
+  <input id="desc" placeholder="Description">
+  <input id="amount" type="number" placeholder="Amount">
+  <select id="category">
+    <option>Eating Out</option>
+    <option>Fun</option>
+    <option>Groceries</option>
+    <option>Misc</option>
+  </select>
+  <button onclick="addExpense()">Add Expense</button>
+</section>
+
+<section class="card" id="stats"></section>
+
+<section class="card">
+  <h2>Expenses</h2>
+  <ul id="expenseList"></ul>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
