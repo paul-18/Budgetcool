@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shared Money Pot</title>
+  <title>Shared Money Pots</title>
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<h1>🫙 Shared Money Pot</h1>
+<header>
+  <h1>🫙 Money Pots</h1>
+</header>
+
+<section id="pots" class="pot-bar"></section>
 
 <section class="card">
-  <h2>Add Money to Pot</h2>
-  <input type="number" id="addAmount" placeholder="Amount">
+  <h2>Add Money</h2>
+  <input id="addAmount" type="number" placeholder="Amount">
   <select id="addBy">
     <option>You</option>
     <option>Partner</option>
@@ -44,3 +48,4 @@
 <script src="app.js"></script>
 </body>
 </html>
+
